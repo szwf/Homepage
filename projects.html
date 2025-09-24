@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Biography Timeline — Stephen Wang" />
+  <title>Timeline</title>
+  <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+    <p>Milestones that shaped my journey.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Timeline</a>
+      <a aria-current="page" href="about.html">Contacts</a>
+    </nav>
+    
+  </header>
+
+  <section class="hero">
+    <h2>Biography Timeline</h2>
+    <p>A chronological snapshot of studies, work, and projects — from early interests to current focus.</p>
+  </section>
+
+  <main>
+    <section aria-label="Short bio">
+      <div class="split">
+    </section>
+
+    <section id="timeline">
+      <h3>Timeline</h3>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-meta">2024</div>
+            <h4 class="t-title">Attending Northeastern</h4>
+            <p>Pursuing computer science in hopes of utilizing technology to solve financial challenges in the world.</p>
+            <div class="t-tags">
+              <span class="pill">Python</span><span class="pill">Java</span><span class="pill">Database Management</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-meta">2024</div>
+            <h4 class="t-title">Tesla Valuation Project</h4>
+            <p>Utilized various valuation methods such as comparable companies’ analysis, precedent transactions analysis, and discount cash-flow analysis to value Tesla as of March 2024</p>
+            <div class="t-tags">
+              <span class="pill">Company Valuation</span><span class="pill">DCF</span><span class="pill">Stocks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-meta">2020</div>
+            <h4 class="t-title">Attended VCU</h4>
+            <p>Majored in Finance and was in the investment club</p>
+            <div class="t-tags">
+              <span class="pill">Bloomberg</span><span class="pill">Financial Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="year"></span> Stephen Wang · MIT License</small>
+  </footer>
+
+  <script type="module">
+    export const setYear = id => (document.getElementById(id).textContent = new Date().getFullYear());
+    setYear('year');
+  </script>
+</body>
+</html>

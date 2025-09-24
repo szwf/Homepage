@@ -1,0 +1,43 @@
+
+    :root{
+      --bg:#0f172a; --panel:#1e293b; --ink:#f1f5f9; --muted:#94a3b8;
+      --accent:#38bdf8; --line:#334155;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6}
+    a{color:var(--accent); text-decoration:none}
+    header{ text-align:center; padding:2rem 1rem; background:var(--panel); border-bottom:1px solid var(--line) }
+    header h1{font-size:2rem; margin-bottom:.5rem}
+    header p{color:var(--muted)}
+    header nav{margin-top:1rem}
+    header nav a{color:var(--accent); margin:0 .75rem; font-weight:500}
+
+    .hero{ padding:3rem 1rem; text-align:center; background:linear-gradient(180deg,#1e293b,#0f172a) }
+    .hero h2{ font-size:1.9rem; color:var(--accent); margin-bottom:.5rem }
+    .hero p{ color:var(--muted); max-width:60ch; margin:0 auto }
+
+    main{ max-width:900px; margin:0 auto; padding:2rem 1rem }
+    section{ margin-bottom:3rem }
+    section h3{ font-size:1.5rem; margin-bottom:.75rem; border-bottom:2px solid var(--line); padding-bottom:.3rem; color:var(--accent) }
+
+    .timeline{ position:relative; margin:2rem 0; padding-left:2rem; border-left:3px solid var(--accent) }
+    .t-item{ position:relative; margin-bottom:2rem }
+    .t-dot{
+      position:absolute; left:-11px; top:4px; width:16px; height:16px; border-radius:50%;
+      background:var(--accent); border:2px solid var(--panel);
+    }
+    .t-card{
+      background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:1rem;
+      box-shadow:0 4px 8px rgba(0,0,0,.3);
+    }
+    .t-meta{ color:var(--muted); font-size:.9rem; margin-bottom:.25rem }
+    .t-title{ margin:.1rem 0 .5rem; color:var(--accent) }
+    .t-tags{ margin-top:.5rem; display:flex; gap:.5rem; flex-wrap:wrap }
+    .pill{ display:inline-block; padding:.18rem .55rem; border:1px solid var(--line); border-radius:999px; font-size:.8rem; color:var(--muted) }
+
+    .split{ display:grid; gap:1rem; grid-template-columns: 1fr; }
+    @media(min-width:820px){ .split{ grid-template-columns: 1.1fr .9fr } }
+
+    footer{
+      background:var(--panel); color:var(--muted); text-align:center; padding:1.5rem 1rem; border-top:1px solid var(--line)
+    }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Personal Homepage of Stephen Wang" />
+  <title>Homepage</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <h1>Stephen Wang</h1>
+    <p>Northeastern Student · Finance · Technology</p>
+    <nav>
+      <a aria-current="page" href="index.html">Home</a>
+      <a href="projects.html">Timeline</a>
+      <a href="about.html">Contacts</a>
+    </nav>    
+  </header>
+
+  <section class="hero">
+    <h2>Hello 👋</h2>
+  </section>
+
+  <main>
+    <section id="about">
+      <h3>About Me</h3>
+      <p>
+        I'm someone who thrives at the intersection of collaboration and innovation. I love playing tennis and cooking. On the tennis court, I've learned that success comes from reading the game, adapting quickly, and maintaining focus under pressure—skills that translate directly to my work in finance and technology. I'm passionate about leveraging technology to solve complex financial challenges and believe the best outcomes happen when diverse teams come together to tackle problems from multiple angles. My experience has taught me that whether you're serving an ace or presenting to stakeholders, preparation, teamwork, and the ability to perform when it matters most are what separate good from great.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="year"></span> Stephen Wang · MIT License</small>
+  </footer>
+
+  <!-- ES6+ Module -->
+  <script type="module">
+    export function setYear(id){
+      document.getElementById(id).textContent = new Date().getFullYear();
+    }
+    setYear('year');
+  </script>
+</body>
+</html>
