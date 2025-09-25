@@ -57,6 +57,8 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Respect reduced motion
+    // Really like the idea here, 
+    // Nice background animation—subtle, modern, and cohesive with the theme. Consider capping particle count on ultra-wide screens to keep CPU low
     const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduceMotion) {
       // draw a quiet starfield once, no animation
@@ -164,3 +166,4 @@
   </script>
 </body>
 </html>
+
