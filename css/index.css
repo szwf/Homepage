@@ -3,6 +3,7 @@
       --accent:#38bdf8; --line:#334155;
     }
     *{box-sizing:border-box;margin:0;padding:0}
+    /* not sure did you using the prettier formatter, seems like the lines are a bit too long*/
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6}
     a{color:var(--accent); text-decoration:none}
     header{
@@ -38,3 +39,6 @@
       text-align:center; padding:1.5rem 1rem;
       border-top:1px solid var(--line);
     }
+
+    
+    
