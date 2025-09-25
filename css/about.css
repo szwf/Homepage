@@ -15,7 +15,7 @@
                   radial-gradient(1200px 800px at 90% 100%, #0d1729 0%, transparent 70%),
                   var(--bg);
     }
-
+    /* ====== Main content container ====== */
     header{
       text-align:center; padding:2rem 1rem; background:var(--panel);
       border-bottom:1px solid var(--line); position:relative; z-index:1;
@@ -50,6 +50,7 @@
     }
     .btn.primary{ background:var(--accent); color:#05121f; border-color:var(--accent); font-weight:600 }
 
+    * ====== Footer (same surface as header/card) ====== */
     footer{
       background:var(--panel); color:var(--muted); text-align:center; padding:1.25rem;
       border-top:1px solid var(--line); position:relative; z-index:1
@@ -59,3 +60,4 @@
     @media (prefers-reduced-motion: reduce) {
       .particles{background:var(--bg)}
     }
+
